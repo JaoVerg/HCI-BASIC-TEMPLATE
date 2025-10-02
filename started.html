@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Get Started Template</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font (Inter) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: { sans: ["Inter", "system-ui", "sans-serif"] },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-sans bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <header class="bg-white shadow sticky top-0 z-50">
+      <div
+        class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between"
+      >
+        <h1 class="text-xl font-bold text-indigo-600">StartUp</h1>
+        <nav class="hidden md:flex space-x-6">
+          <a href="./index.html" class="hover:text-indigo-600">Home</a>
+          <a href="#get-started" class="hover:text-indigo-600">Get Started</a>
+          <a href="#steps" class="hover:text-indigo-600">Steps</a>
+        </nav>
+        <button class="md:hidden p-2 border rounded">☰</button>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+
+    <!-- Get Started Form Section -->
+    <section id="get-started" class="max-w-2xl mx-auto px-4 py-16">
+      <h3 class="text-3xl font-bold text-center">Fill in Your Details</h3>
+      <p class="text-center text-gray-600 mt-2">
+        Just a few details to begin your journey.
+      </p>
+
+      <form class="mt-8 bg-white p-8 rounded-xl shadow space-y-6">
+        <div>
+          <label for="name" class="block font-semibold">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            class="mt-1 w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-indigo-500 focus:outline-none"
+          />
+        </div>
+
+        <div>
+          <label for="email" class="block font-semibold">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            class="mt-1 w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-indigo-500 focus:outline-none"
+          />
+        </div>
+
+        <div>
+          <label for="password" class="block font-semibold">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            class="mt-1 w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-indigo-500 focus:outline-none"
+          />
+        </div>
+
+        <button
+          type="submit"
+          class="w-full bg-indigo-600 text-white font-semibold py-3 rounded-lg hover:bg-indigo-700 shadow"
+        >
+          Create Account
+        </button>
+      </form>
+    </section>
+
+    <!-- Steps Section -->
+    <section id="steps" class="max-w-5xl mx-auto px-4 py-16">
+      <h3 class="text-3xl font-bold text-center">Steps to Get Started</h3>
+      <p class="text-center text-gray-600 mt-2">Follow these simple steps:</p>
+
+      <div class="mt-10 grid gap-8 md:grid-cols-3">
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-md text-center">
+          <div class="text-indigo-600 text-3xl font-extrabold">1</div>
+          <h4 class="mt-2 font-semibold text-lg">Sign Up</h4>
+          <p class="mt-2 text-gray-600">
+            Enter your name, email, and password using the form above.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-md text-center">
+          <div class="text-indigo-600 text-3xl font-extrabold">2</div>
+          <h4 class="mt-2 font-semibold text-lg">Confirm Email</h4>
+          <p class="mt-2 text-gray-600">
+            Check your inbox and click the verification link we send you.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-md text-center">
+          <div class="text-indigo-600 text-3xl font-extrabold">3</div>
+          <h4 class="mt-2 font-semibold text-lg">Start Exploring</h4>
+          <p class="mt-2 text-gray-600">
+            Login and enjoy full access to our platform’s features.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t">
+      <div class="max-w-7xl mx-auto px-4 py-8 text-center text-gray-500">
+        © 2025 HCI. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>

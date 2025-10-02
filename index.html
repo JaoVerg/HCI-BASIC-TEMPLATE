@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Basic Template UI</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font (Inter) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: { sans: ["Inter", "system-ui", "sans-serif"] },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-sans bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <header class="bg-white shadow sticky top-0 z-50">
+      <div
+        class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between"
+      >
+        <h1 class="text-xl font-bold text-indigo-600">
+          Human Computer Interaction
+        </h1>
+        <nav class="hidden md:flex space-x-6">
+          <a href="#hero" class="hover:text-indigo-600">Home</a>
+          <a href="#features" class="hover:text-indigo-600">Features</a>
+          <a href="#contact" class="hover:text-indigo-600">Contact</a>
+        </nav>
+        <button class="md:hidden p-2 border rounded">☰</button>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      id="hero"
+      class="bg-gradient-to-r from-indigo-600 to-violet-600 text-white"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 py-20 flex flex-col md:flex-row items-center gap-8"
+      >
+        <div class="md:w-1/2">
+          <h2 class="text-4xl md:text-5xl font-extrabold leading-tight">
+            Build User Interface
+          </h2>
+          <p class="mt-4 text-lg text-indigo-100">
+            Learn how to use TailwindCSS for rapid UI development with
+            responsive design out of the box.
+          </p>
+          <a
+            href="./started.html"
+            class="inline-block mt-6 px-6 py-3 bg-white text-indigo-700 font-semibold rounded-lg shadow hover:shadow-md"
+            >Get Started</a
+          >
+        </div>
+        <div class="md:w-1/2">
+          <div
+            class="bg-white w-full h-64 rounded-lg shadow-md flex items-center justify-center text-gray-500"
+          >
+            <img
+              src="./public/sample-image.jpg"
+              class="rounded-lg"
+              alt="Image Placeholder"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="max-w-7xl mx-auto px-4 py-16">
+      <h3 class="text-3xl font-bold text-center">Features</h3>
+      <p class="text-center text-gray-600 mt-2">
+        What makes our UI/UX awesome?
+      </p>
+
+      <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-md">
+          <h4 class="font-semibold text-lg">Responsive Layout</h4>
+          <p class="mt-2 text-gray-600">
+            Works across mobile, tablet, and desktop with Tailwind's responsive
+            classes.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-md">
+          <h4 class="font-semibold text-lg">Utility-First</h4>
+          <p class="mt-2 text-gray-600">
+            Compose UI quickly with Tailwind’s utility classes for spacing,
+            colors, and typography.
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-md">
+          <h4 class="font-semibold text-lg">Customizable</h4>
+          <p class="mt-2 text-gray-600">
+            Easily extend the theme with your own colors, fonts, and components.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-white border-t">
+      <div class="max-w-7xl mx-auto px-4 py-8 text-center text-gray-500">
+        © 2025 HCI. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>
